@@ -2,4 +2,4 @@
 
 ## Participated in CTF events
 
-- [.... CTF](https://ctftime.org/event/1)
+- [Srdnlen CTF](https://ctftime.org/event/2576)
