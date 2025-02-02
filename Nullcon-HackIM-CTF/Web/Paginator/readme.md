@@ -63,7 +63,7 @@ if(isset($_GET['p']) && str_contains($_GET['p'], ",")) {
 
 ## Approach
 
-The payload is `/?p=2,10 or 1=1` (`/?p=2,10%20or%201=1`).
+The payload is `/?p=2,10%20or%201=1` (`/?p=2,10 or 1=1`).
 
 ## Flag
 
