@@ -61,7 +61,13 @@ if(isset($_GET['p']) && str_contains($_GET['p'], ",")) {
 
 ## Approach
 
-The SQL injection method is the same as the Paginator challenge.
+The SQL injection method is the same as the Paginator challenge. However, note that the following statement will only take the first two values separated by a comma:
+
+```php
+[$min, $max] = explode(",",$_GET['p']);
+```
+
+So we need to use `join` in the following exploits.
 
 This is a SQLite3 database, so firstly we leak the table name by:
 
